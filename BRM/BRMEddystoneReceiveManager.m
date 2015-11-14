@@ -265,6 +265,11 @@
     _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
 }
 
+- (void)stopMonitoringEddystoneBeacon
+{
+    [_centralManager stopScan];
+}
+
 - (BRMFrameType)getFrameTypeWithAdvertiseData:(NSData *)advertiseData
 {
     unsigned long advertiseDataSize = advertiseData.length;
