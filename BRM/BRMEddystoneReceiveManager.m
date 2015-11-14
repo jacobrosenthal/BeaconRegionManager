@@ -38,7 +38,7 @@
     unsigned long advertiseDataSize = advertiseData.length;
     
     if (self) {
-        if (advertiseDataSize < 20) {
+        if (advertiseDataSize < 18) {
             return nil;
         }
         
