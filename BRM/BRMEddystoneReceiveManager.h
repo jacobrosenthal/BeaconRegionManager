@@ -160,6 +160,11 @@ typedef NS_ENUM(NSUInteger, BRMFrameType) {
 - (void)startMonitoringEddystoneBeacon;
 
 /**
+ *  Stop monitoring for Eddystone beacon.
+ */
+- (void)stopMonitoringEddystoneBeacon;
+
+/**
  *  The object is delegate of BRMEddystoneReceiveDelegate.
  */
 @property (nonatomic, weak) id<BRMEddystoneReceiveDelegate> delegate;
